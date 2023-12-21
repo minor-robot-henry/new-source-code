@@ -128,7 +128,6 @@ int main(int argc,char **argv) {
     return 0;
 }
 
-
 // Add coordinates to a list if robot is idle to remember the route of the operator
 void addCoordinatesToList(float operatorX, float operatorZ) {
     if (loggedRoute.size() < 1000) {
