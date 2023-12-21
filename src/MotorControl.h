@@ -28,14 +28,11 @@ class Motorcontrol
 private:
     ros::Publisher motor_pub;
     geometry_msgs::Twist driveMsg;
-    
-
 
 public:
     Motorcontrol(ros::NodeHandle *nh)
     {
         motor_pub = nh->advertise<geometry_msgs::Twist>("/RosAria/cmd_vel", 10);
-       
     }
 
     void driveForward()
